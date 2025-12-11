@@ -1,0 +1,160 @@
+/* public/styles.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
+  min-height: 100vh;
+  padding: 30px 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+header {
+  background: #4361ee;
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.input-section {
+  padding: 20px;
+  background: #f9fbfd;
+  border-bottom: 1px solid #eaeef5;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.btn {
+  background: #4361ee;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #3a56d4;
+}
+
+.btn-secondary {
+  background: #6c757d;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+}
+
+.btn-success {
+  background: #06d6a0;
+}
+
+.btn-success:hover {
+  background: #05b888;
+}
+
+.items-list {
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #edf2f7;
+  transition: background 0.2s;
+}
+
+.item:hover {
+  background: #f8fafc;
+}
+
+.item.purchased {
+  opacity: 0.7;
+  text-decoration: line-through;
+  color: #718096;
+}
+
+.item-info {
+  flex: 1;
+  font-size: 1.05rem;
+}
+
+.item-price {
+  color: #4361ee;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.item-actions button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+.checkout-section {
+  padding: 24px;
+  text-align: center;
+  background: #f0f4ff;
+}
+
+.checkout-btn {
+  background: #06d6a0;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+}
+
+.checkout-btn:hover {
+  background: #05b888;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+  color: #8899a6;
+}
