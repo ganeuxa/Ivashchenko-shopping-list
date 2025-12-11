@@ -57,7 +57,7 @@ const togglePurchased = (req, res) => {
   res.json(item);
 };
 
-// НОВЫЙ ЭНДПОИНТ: получить итоговую сумму купленных товаров
+
 const checkout = (req, res) => {
   const purchasedItems = shoppingList.filter(item => item.purchased);
   const total = purchasedItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -68,7 +68,6 @@ const checkout = (req, res) => {
   });
 };
 
-// Опционально: очистить корзину (можно добавить, если нужно)
 const clearCart = (req, res) => {
   shoppingList = [];
   nextId = 1;
